@@ -119,14 +119,14 @@ var x = setInterval(function() {
 			
 			alert('Times Up! You Loose')
 			window.location.reload();
-			clearInterval(x);
 
 		}
 	
 	}
 	else if(seconds==0){
-		console.log('You Win!')
-		window.location.reload();
+		document.getElementById('time').setAttribute('value','You Win')
+		clearInterval(x);
+			
 	}
 	document.getElementById('time').setAttribute('value','Time Left: '+seconds+'')
 
