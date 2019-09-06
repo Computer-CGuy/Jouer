@@ -126,6 +126,7 @@ var x = setInterval(function() {
 	}
 	else if(seconds==0){
 		console.log('You Win!')
+		window.location.reload();
 	}
 	document.getElementById('time').setAttribute('value','Time Left: '+seconds+'')
 
